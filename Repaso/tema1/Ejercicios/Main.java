@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ejercicios {
+public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -59,9 +59,9 @@ public class Ejercicios {
             double areaTriangulo = Funciones.areaTriangulo(base, altura);
 
             System.out.println("\n--- Resultados ---");
-            System.out.printf("Área del círculo: ", areaCirculo);
-            System.out.printf("Área del cuadrado: ", areaCuadrado);
-            System.out.printf("Área del triángulo:      ", areaTriangulo);
+            System.out.println("Área del círculo: "+ areaCirculo);
+            System.out.println("Área del cuadrado: "+ areaCuadrado);
+            System.out.println("Área del triángulo:"+ areaTriangulo);
         } catch (IllegalArgumentException e) {
             System.out.println("Error: " + e.getMessage());
         } catch (Exception e) {
